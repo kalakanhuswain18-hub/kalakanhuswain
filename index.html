@@ -1,123 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Kalakanhu Swain | ML Engineer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    /* Typewriter animation */
-    .typewriter {
-      overflow: hidden;
-      border-right: .15em solid #10B981;
-      white-space: nowrap;
-      animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+    body {
+      background: #111827;
+      color: white;
+      font-family: sans-serif;
+      text-align: center;
+      padding: 20px;
     }
 
-    @keyframes typing {
-      from { width: 0 }
-      to { width: 100% }
-    }
-
-    @keyframes blink-caret {
-      from, to { border-color: transparent }
-      50% { border-color: #10B981; }
-    }
-
-    /* Fade-in for other content */
-    .fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      animation: fadeIn 1.5s ease-out forwards;
-      animation-delay: 4s;
-    }
-
-    @keyframes fadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-        img {
-      width: 200px;
-      height: 200px;
+    img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      border: 3px solid #00ffff;
-      object-fit: cover;
-      box-shadow: 0 0 20px #00ffff;
-      animation: float 3s ease-in-out infinite, glow 2s ease-in-out infinite alternate;
+      border: 3px solid #10B981;
+      margin-top: 20px;
     }
 
-    @keyframes float {
-      0% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0); }
+    .btn {
+      background: #10B981;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
     }
 
-    @keyframes glow {
-      from { box-shadow: 0 0 10px #00ffff; }
-      to { box-shadow: 0 0 30px #00ffff, 0 0 60px #00ffff; }
+    .section {
+      margin-top: 40px;
     }
-
   </style>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col items-center p-6">
 
-  <!-- Header -->
-  <img src="profile.jpg" alt="Profile">
+<body>
 
-  <h1 class="text-3xl sm:text-4xl font-bold text-center mt-10 typewriter">
-    💫 Hi 👋, I'm Kalakanhu Swain
+  <!-- Profile Image -->
+  <img src="https://via.placeholder.com/150" alt="Profile">
+
+  <!-- Name -->
+  <h1 class="text-3xl font-bold mt-4">
+    👋 Hi, I'm Kalakanhu Swain
   </h1>
-  <h2 class="text-xl text-center mt-4 text-green-400 fade-in">
-    🚀 A passionate Machine Learning Engineer & Frontend Developer from Odisha, India
+
+  <h2 class="text-green-400 mt-2">
+    🚀 Machine Learning Engineer & Frontend Developer
   </h2>
 
   <!-- Email -->
-  <p class="mt-4 fade-in text-center">
-    📧 <span class="font-semibold">kalakanhuswain18@gmail.com</span> <br />
-    For Collaboration, Projects, or Anything Else 😊
+  <p class="mt-3">
+    📧 
+    <a href="mailto:kalakanhuswain18@gmail.com" class="text-green-400">
+      kalakanhuswain18@gmail.com
+    </a>
   </p>
 
-  <!-- Current Work -->
-  <div class="mt-8 fade-in max-w-2xl text-center">
-    <h3 class="text-2xl text-green-400 font-semibold mb-3">🔭 Currently Working On:</h3>
-    <ul class="space-y-2">
-      <li>📊 Predictive modeling projects using Python and scikit-learn</li>
-      <li>🧠 Exploring Deep Learning and Neural Networks</li>
-      <li>📈 Experimenting with real-world datasets</li>
-    </ul>
+  <!-- Social -->
+  <div class="section">
+    <h3 class="text-xl text-green-400">🔗 Connect</h3>
+    <p>
+      <a href="#" class="text-green-400">GitHub</a> |
+      <a href="#" class="text-green-400">LinkedIn</a>
+    </p>
   </div>
 
-  <!-- Learning -->
-  <div class="mt-8 fade-in max-w-2xl text-center">
-    <h3 class="text-2xl text-green-400 font-semibold mb-3">🌱 Currently Learning:</h3>
-    <ul class="space-y-2">
-      <li>Deep Learning (CNNs, RNNs, LSTMs)</li>
-      <li>Natural Language Processing (NLP)</li>
-      <li>Model Deployment (Flask, FastAPI)</li>
-    </ul>
+  <!-- Skills -->
+  <div class="section">
+    <h3 class="text-xl text-green-400">🛠 Skills</h3>
+    <p>Python | Machine Learning | Scikit-learn | Pandas | HTML | CSS | JavaScript</p>
   </div>
 
-  <!-- Collaboration -->
-  <div class="mt-8 fade-in max-w-2xl text-center">
-    <h3 class="text-2xl text-green-400 font-semibold mb-3">🤝 Looking to Collaborate On:</h3>
-    <ul class="space-y-2">
-      <li>Machine Learning Projects</li>
-      <li>AI Research or Open Source Contributions</li>
-      <li>Data Science Hackathons</li>
-    </ul>
+  <!-- Projects -->
+  <div class="section">
+    <h3 class="text-xl text-green-400">💼 Projects</h3>
+
+    <p><b>📊 House Price Prediction</b><br>
+    ML model using scikit-learn</p>
+
+    <p><b>🤖 Voice Assistant (Jarvis)</b><br>
+    Python-based AI assistant</p>
   </div>
 
-  <!-- Fun Fact -->
-  <div class="mt-8 fade-in text-center max-w-xl">
-    <h3 class="text-2xl text-green-400 font-semibold mb-3">⚡ Fun Fact:</h3>
-    <p>“I believe machines can’t replace humans — but they can definitely learn from them 🤖”</p>
+  <!-- Resume -->
+  <div class="section">
+    <a href="#" class="btn">📄 Download Resume</a>
   </div>
 
   <!-- Footer -->
-  <footer class="mt-12 mb-6 fade-in text-sm text-gray-400 text-center">
-    © 2025 Kalakanhu Swain | Built with 💚 using Tailwind CSS
+  <footer class="section text-gray-400">
+    © 2026 Kalakanhu Swain
   </footer>
 
 </body>
